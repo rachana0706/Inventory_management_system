@@ -14,10 +14,10 @@ app.get("/", (req, res) => {
 
 app.use("/products", productRoutes);
 
-// 404 handler for unmatched routes
+
 app.use(notFound);
 
-// Centralized error handler (must be last)
+
 app.use(errorHandler);
 
 module.exports = app;

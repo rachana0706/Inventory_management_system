@@ -8,8 +8,7 @@ const emptyForm = {
   minStock: "",
 };
 
-// Handles both "Add product" (editingProduct is null) and
-// "Update product" (editingProduct is set) via the same form.
+
 function ProductForm({ editingProduct, onSubmit, onCancel }) {
   const [form, setForm] = useState(emptyForm);
   const [formError, setFormError] = useState("");
